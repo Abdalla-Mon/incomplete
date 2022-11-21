@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/Normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/second-project.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Second-Project</title>
+  </head>
+  <body>
+    <!--start-of-header-->
+    <header id="home">
+      <div class="back">
+        <div class="container">
+          <div class="logo"><img src="Images/logo.png" /></div>
+          <div class="links">
+            <div class="bar">
+              <div class="menu">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAcUlEQVRoge3WMQqAMBBE0Ynn0APpOQSPvSB4jrESJJ0S3Aj/delmU30JAIBGbC+2w/0L2/N9e6kO2SVNn/7ee0cpZbweQ+aSlupDNkmRMeShkLRmjwAAAHjCZHwKMr4nZDwAAPgdk/EpyPiekPEAgKZOXxkfuKeEKc0AAAAASUVORK5CYII="
+                />
+              </div>
+              <div class="list">
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#pricing">Pricing</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="line">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAVklEQVRoge3PsQnAMBDAwCf77xw3qdPZCHy3gNAMl3k/uzvP7sApRmqM1BipMVJjpMZIjZEaIzVGaozUGKkxUmOkxkiNkRojNUZqjNQYqTFSY6TGCPxbUVAIU1TtQ3cAAAAASUVORK5CYII="
+              />
+            </div>
+            <div class="search-icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADb0lEQVR4nO2aPWgUQRiG30liQCR6/iAkaBWJTSCFCBYSRMHYCiJopQhWsUljY6VFOkEIiBArS+0EQQP+VAaViIJRi4BBDIJEE1FJLvEei7kcZzxmZ/dmby9xn3aW732/b+d/V8rJycnJycnJ+U8xjRABOiXtkNQuaUnSrKQZYwyN0HeRSgGAHkknJR2WtE/S5hqP/ZL0UtIjSbeNMa/T8NJQgGPAY5LxAjgBtGSdR2yAPcD9hImv5inQl3VO3gCngO+Bkl9hARjMOrdIgItAKXDy1YzQrEMCuJRi4tVczzrXf8B2+7hvfgn4AhQTFGEo65wrYCc8nzFfAu4B54BdVHVloBM4DdwBlj1iFYH9WeZdAb/Zfhw44BmvFxjziDkBtKadX5TZYx5GR4H2mHFbgGGih9WZtHLzNfokwuDNOuNfjoj/HmjI9r2WuZ4Ic+Nx33wNDQPcjdDpD5VTXHOuZa+E55j30OkGFh1aIyF0khh76DB1L7DWqEPrXUitOKbmHabOBtYacGgB1Dpdpgd23XaxO7BeO+4N075QWr777B2OtmVJMwG8VDDGFCV9djyyPZSWbwE2Otq+GWN+hzCzii+Otk2hRHwLsOBoK5DOic31ludCifga/+po2yBpZwAvFYA2SZ0J/cTCtwCfJP10tB8J4KWag7IXqLUoSZoOJeRVgPLt7SvHI8fD2PGK984YE2wIeANccSxLy0BvIJ0u4IdD60YInSTG+iL2AmMhJkPgVoTOoRD5JDX3IsLccJ3xL0TEnyKr02DZ4IkIgyXskTa2SWAQe23m4nwaecUx2YK9t4/iLtDtGbOL6G4PMIldHrMFOxcseBhexJ7qBlh1TwC0AoeAa7gnvGomgEJWef8FtrvGoQh8xM4hH3Cf9108a6YiXE2YRL1MANuyzn9lPhjJqAhN1ROGSPaxY10VYT+2a4ZgEni5FovQCpzBXl0nYQo4D7QBhXJya6sIUuVqux87P7x1GC8Bb4Ab2CXRrIrTkCKkvq0EOiTtlbRVUkH2/6BZSdNRp7pyUg8k+XwXfC7paCYnxTQBtmA/uvjQHEtkaPIiKNGc0JG15+DELMJo1n5TIcZwmKdZ/y+qlxg9obGf0BqJRxGmsvaYOhFFCPrBtmkBOrAXL3Mrb/6/Sb4a7BZ8/Y75nJycnJycnOD8AfJs4DM9ZKKDAAAAAElFTkSuQmCC"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header-text">
+          <div class="display">
+            <h2>
+              Hello World!<br />
+              We Are Kasper We Make Art.
+            </h2>
+            <p>
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at
+              sem. Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+          </div>
+        </div>
+        <div class="change">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!--end-of-header-->
+    <!--start-of-Services-->
+    <section class="services" id="services">
+      <div class="header-text">
+        <h2>Services</h2>
+        <p>
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+          Mauris blandit aliquet elit, eget tincidunt.
+        </p>
+      </div>
+      <div class="container">
+        <div class="col-1">
+          <div class="row-1">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAa0lEQVRIie2VUQqAIBBEX51O6f4XUO9RH6VIhBmMH8kOLMKC83YRRphFG5CAXVQR8DUgCs1zhRqQmyoVv1Vo+igDGMAAMwHSdaqCDs4ALfJoEzUADmD5sO09bbvuDn+Dnine/ommx/AN/q8DvD1YDqyYpAMAAAAASUVORK5CYII="
+            />
+            <div class="row-text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="row-2">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADDUlEQVR4nO2av28TMRTHP6VbJSaQWqWwUwQKiBlYiiiQFjbUtaUS5W9ADDCx8CdUgn+BBQYETBULS1XUIsTChBLKLwmSgR7DOwsnvTj2nX13KP5IXnLne+/7/Ox7ZwcikUgkEolEIpGxZNLjs44BN4HfQMfjc3UmgYvAJeAw8AlIAtly4gwiOgG6QCuAjQbwNrWh2htgOoAtJ5pAm37HesB1jzamge0BG6rtIMGpBH3k9fYHWPFkowHsZtjQ2zYVZIJJ/Gp6TxO4WsCGjfhKgtAkW3wCPNXuaSPTIe+asAzsD7GT1V4AEzltWWMSnwB7wKOBe3rAZQcb+ttpDbcgnM8ny45ZDi54Nu0DcNzSRgPYApa031yCcCuvOBvWLJ3Q20f+ib+HeTroc75HviBcKCbRzBzynncJwN20733MdULWgucahNfAIR9CTVzDLQjfgM2B334AR7RnmlZ72yDsUmI9sICUvK7TQQnSiyRTkaP3uaH1WUFet+r6e2R9KpU8QcgjflQQKhGvaGE/HXrAotbXpcgZNh2WqbAMVthkQpGRH5UJtcCUCT5GfrBt4fdT3gtZmeBz5Ctd8GzRgzB24hULyHt+LMUrbIsc21ZqkeOTsRt5nbEWHyLt9WlVa0KM/BUOLqy1JJR4VWT53m32SmjxKgB6VVkbQsz5JUSwut5FAgIwj+xL1IIyxCfA4/TaPPALCUgtgvCc8OIT4AuwgYjPyopKOIXblrXrnB/VPqc+VMZGhlO+R94k/mTad50wB7JGZnDfIR4m/ijw0/EZD9O+d5AsLH1NeODo8DDxihZuGfAVeEb/FOwCJ3wLzWKKfCdEo77qXIOQ1VYPPDUAt3M4ZvtJWyQIbUsbhZgA3jk65vpVl2fLfQ84V0iZJYsOTu0jdUKeUXHJhA5yal0Krywc6gFPgNMFbdlkQmkjD3B2hDNt5O0w49GmKRM6yD9VSmN9iCM7yMI4FchuVhBKFw+ykH3XnHiJrAnBj6TpP3ypRLxiFjmirsKBOeQfIP/lPmEkEolEIpFIJFIj/gKl2XwAb+A4BwAAAABJRU5ErkJggg=="
+            />
+            <div class="row-text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="row-1">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAADXklEQVRoge3az4sdRRAH8M+amNWY3RDIRsQkCAmIGqNR0YjeJBd/3MTowYP4DxjMTQ2EgEFC/Av0pF6yiIdcIxiICoJ6Ej2IYhaFF0+JEjfu+p6HnsGX92Ome6bfvgXzhWIXXnVVfWe6uqurhxv4f+Ad/IPegKzg9SnGlYwlwyRK+WaKcSVhHl3jiSxjY26nN+U2iHsxU/H7LPbmdppCZDeOYKFG754IW/trfl/Aa9gVYSsJd+FnYWp08EyF7injp1UpxyvGP4VfC70lGd/eXsPJ28VpYZr0Yxsu1JDo4VPMDYzdJDyEwfy6iD2TINEv3wo5cRCf4FoEiVKu4gPcj7vxdYVuKzI7a0iU8ndC8KOki78i9C7iznHBViX7oYJMHW6O0KnCDG6J0NslxJSMzfhBu6edU37EliZE4GHtp04OWcFjTUmUOLYOiLzZlgShnPhiiiQ+x4YcRAjL8DSm2FWRy25sibKg/erUBLPiVrRonJX2JDt4Aw/itkIOCHO9k2jrvVwkdgirRqzjM4bLj37MYTHB3mXcWhfkqHJ7Xig79gmV7JN4tM5QgUUcLgKo83sGz0faPY+v8D2+K/7+MU75pFAGNE3Mjuo3MYh5XGrh75ci5iGstjDaE3IiFW+19Lk6ymjV8TRGHmhA5EBLn93SUH+OdFUfUeswhz8bjLnSwmdPsYXkPLM3eQhtHtx1yEmkycGn9cmvRD+RkYmTgGcbjHmupc+RMR8VmmfL1mb53YrfG/paLmKt7FpuFDbEw3hbXDOhlEVx834GHyfYPYcTeEHYpBs1+FJLlEVhsxuHrYkkrogoUWKRWjReEja7h4Tj6Zbi/2PSp9P7uUjA44nOc0kX98UEGLv8XtZ+VWuCazn9zgqNuGm8kZ7QuNuUg8i7UyRRyqm2JA5pX0zmypWnm5LYjt/WAYlSOrh9XLBVyf4y7kiiPlnswEtNBu4W18RO6cCPmzYxTeylIqZGqLtW+LLQOSjs1k2vFfaobgJmufAZRWZF2KUHa55tNQGV8pnhAnOD0C4abARmvbXqv3r7CU9U6MYs1ycqxj/iv1uArCRK7MQrQrOtCq+qJ/JijY3Nha+xFztrgZi6LObmd+qYygcDk8Kaf8IxiS8f4EN9Pac+rOKjCfm8gXWFfwH52WX+7RNVyQAAAABJRU5ErkJggg=="
+            />
+            <div class="row-text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="row-2">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAC1UlEQVRoge3Y3YsXVRjA8c/mYhCpayG1V2EqFhRIwWKRZHgXBN2IRWRCtfU3pAShN0l4FVtEeNFNBIX/QLW93KyySreKsiqY4ksFuwtd7LJenNn2MM78ds7vTL/1Yr5w4Jkzz3lezsw858yho6OjYy0ZasnOMHZitNR/Heex0JKf/4VDuIalmnYNB9csulX4UH3g5Ta+RjHW8hjmNE9grhhz33BS8+CX28m2g2jyEY/ibezGhqLvCezo0+cFXC3kWUzhG9zo015PPsC89JlObXN4v+3gxwcQeLm911bwowYz8+U2i8dTAn2gpv8gHkoxVPAXpnG2kFN5WPjesvlB2sxNYi/WRTbW4RX8kmjr+zYSmExw+Ine1WwIRxPs/TzIBL4ojRvG80UbLt37qqHNyUElcAsbozF7cTm6P4OXo/sjuH0/JfB5pL9N9bZiFk9GehN9JHAYp/B02wm8Gel/2UNvItJ7KzGBXVH/qapA68poE+5E8tYeetsi+Vaij5Ea+T9yEng0kmd66F2K5C0Z/irJSeClSP5UeN/LzONEdL0nw18lOQkcwKZCnsFrQhUS9b2Ki8X1CPZn+Ksk9xU6Hl3/iu3CGvCcsN3+Lbr/GR7J8FdJebFJZRw38bFQKRZxrqQzhGN4N9NXJXVPYDHBxhFh9ve5dy+0D7/jowR7Kb5rn0Dq39Ee/Ii/rVSkrdicaAf+TFGuS+AnYdFJZbP+gi77bkzdK/Stlf/WQXIZ36UMqEvgX6FMzudGlMA83ih8N6ZXGZ0SFqvpjKCacgYv4nTqwNXK6B8YE2r7C8LBVG7pXWZBKBZTwi/oUoXO+kiurE5NglkSnsIgnkSZsUi+vgb+s3gG/1jZTh+qUso5Xt+Id/R3etGLYTyL1/Fg0XcFT0n8wFfja2mnDf22OeFYs5KczdwgmBYq4VSdQs4rtEE4Cmz7yHy5Op0WEqiqTh0dHR0d7XAXuLGA9caANVAAAAAASUVORK5CYII="
+            />
+            <div class="row-text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end-of-services-->
+    <!--start-of-design-->
+    <section class="design-over">
+      <section class="design" id="design">
+        <div class="img"><img src="/Images/mobile.png" /></div>
+        <div class="design-text">
+          <div class="design-content">
+            <h2>OUR DESIGN COMES WITH...</h2>
+            <div>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA8UlEQVRIie2VwUqCURBGzw3RIoJACDc+hkGbVkFbt72By3at7BXMIOwNeoFcuBHCTfg2BWFCctyM8i+MlN+C5P92d+be78zMYi7shNSq2len5tdUfVarAKVg3AIXwCMwyVnvAdAC2sD1ooOhOsppvJQ6UocAexFLwNe2AOGVsoBfUwEoAAXgDwHvQF09ymsYHvXwXAab6mwLq3qhmdqEWEgBOQUugcMVhV0Bx0Avzi3gDXhacfcDGKSUxuu2fKJ+qp1M7C4+ltpP70vfJdQz4BxoABVgX72JdAUoAw/qGHhJKb2uVXEGcL/BzLsbmf8rzQF3ciK5Yh/40AAAAABJRU5ErkJggg=="
+              />
+              <p>Responsive Design</p>
+            </div>
+            <div>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA8UlEQVRIie2VwUqCURBGzw3RIoJACDc+hkGbVkFbt72By3at7BXMIOwNeoFcuBHCTfg2BWFCctyM8i+MlN+C5P92d+be78zMYi7shNSq2len5tdUfVarAKVg3AIXwCMwyVnvAdAC2sD1ooOhOsppvJQ6UocAexFLwNe2AOGVsoBfUwEoAAXgDwHvQF09ymsYHvXwXAab6mwLq3qhmdqEWEgBOQUugcMVhV0Bx0Avzi3gDXhacfcDGKSUxuu2fKJ+qp1M7C4+ltpP70vfJdQz4BxoABVgX72JdAUoAw/qGHhJKb2uVXEGcL/BzLsbmf8rzQF3ciK5Yh/40AAAAABJRU5ErkJggg=="
+              />
+              <p>Modern And Clean Design</p>
+            </div>
+            <div>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA8UlEQVRIie2VwUqCURBGzw3RIoJACDc+hkGbVkFbt72By3at7BXMIOwNeoFcuBHCTfg2BWFCctyM8i+MlN+C5P92d+be78zMYi7shNSq2len5tdUfVarAKVg3AIXwCMwyVnvAdAC2sD1ooOhOsppvJQ6UocAexFLwNe2AOGVsoBfUwEoAAXgDwHvQF09ymsYHvXwXAab6mwLq3qhmdqEWEgBOQUugcMVhV0Bx0Avzi3gDXhacfcDGKSUxuu2fKJ+qp1M7C4+ltpP70vfJdQz4BxoABVgX72JdAUoAw/qGHhJKb2uVXEGcL/BzLsbmf8rzQF3ciK5Yh/40AAAAABJRU5ErkJggg=="
+              />
+              <p>Clean Code</p>
+            </div>
+            <div>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA8UlEQVRIie2VwUqCURBGzw3RIoJACDc+hkGbVkFbt72By3at7BXMIOwNeoFcuBHCTfg2BWFCctyM8i+MlN+C5P92d+be78zMYi7shNSq2len5tdUfVarAKVg3AIXwCMwyVnvAdAC2sD1ooOhOsppvJQ6UocAexFLwNe2AOGVsoBfUwEoAAXgDwHvQF09ymsYHvXwXAab6mwLq3qhmdqEWEgBOQUugcMVhV0Bx0Avzi3gDXhacfcDGKSUxuu2fKJ+qp1M7C4+ltpP70vfJdQz4BxoABVgX72JdAUoAw/qGHhJKb2uVXEGcL/BzLsbmf8rzQF3ciK5Yh/40AAAAABJRU5ErkJggg=="
+              />
+              <p>Browser Friendly</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!--end-of-design-->
+    <!--start-of-portfolio-->
+    <section class="portfolio">
+      <div class="header-text">
+        <h2>PORTFOLIO</h2>
+        <p>
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+          Mauris blandit aliquet elit, eget tincidunt.
+        </p>
+        <div class="list-2">
+          <ul>
+            <li>All</li>
+            <li>App</li>
+            <li>Photo</li>
+            <li>Web</li>
+            <li>print</li>
+          </ul>
+        </div>
+      </div>
+      <div class="photos">
+        <div class="photo-container">
+          <img src="/Images/shuffle-01.jpg" />
+          <div class="photo-text">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="photo-container">
+          <img src="/Images/shuffle-02.jpg" />
+          <div class="photo-text">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="photo-container">
+          <img src="/Images/shuffle-03.jpg" />
+          <div class="photo-text">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="photo-container">
+          <img src="/Images/shuffle-04.jpg" />
+          <div class="photo-text">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="photo-container">
+          <img src="/Images/shuffle-05.jpg" />
+          <div class="photo-text">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="photo-container">
+          <img src="/Images/shuffle-06.jpg" />
+          <div class="photo-text">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="photo-container">
+          <img src="/Images/shuffle-07.jpg" />
+          <div class="photo-text">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="photo-container">
+          <img src="/Images/shuffle-08.jpg" />
+          <div class="photo-text">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+      </div>
+      <div class="more">
+        <a href="#home"><img src="/Images/button_more.jpg" /></a>
+      </div>
+    </section>
+    <!--end-of-portfolio-->
+  </body>
+</html>

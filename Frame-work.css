@@ -1,0 +1,76 @@
+:root {
+    --main-color: #10cab7;    /* genzre  */
+    --secondary-color: #2c4755; /* ko7le */
+    --section-padding: 60px;
+    --section-background: #f6f6f6; /*near to white*/
+    --main-duration: 0.5s;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 160%;
+
+}
+
+body{
+    font-family: "Work Sans", sans-serif;
+}
+
+
+/** container-width-media-query**/
+.container{
+    margin-left:auto ;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 576px){
+    .container{
+        width: 550px;
+    }
+}
+
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+
+/**how to make the child in the middle of the parent**/
+
+.parent{
+    position: relative;
+}
+
+.child{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/** how to make the background-img as width or height as the user phone width(full-screen)**/
+{
+    background-size : cover;
+    height : 100vh;
+    width : 100vh;
+}
+
+/** if i dont want the p to strech i give the div that the p into it 
+ * a width that will adjust it try to make a long p and give the div in it a 
+ specific width it will be break into sentances**/
+
+ auto-fill, minmax(300px,1fr)
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
